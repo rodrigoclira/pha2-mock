@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TRENDING PHA2 (Mock)</title>
+  <style>
+    :root { --blue:#101e78; --deep:#132569; --bg:#ececec; --card:#ffffff; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family: "Segoe UI", Arial, sans-serif; background:var(--bg); color:#303030; }
+    .layout { display:grid; grid-template-columns:220px 1fr; min-height:100vh; }
+    .sidebar {
+      background:linear-gradient(180deg,#1a2f86,#0c1b59); color:#d8e2ff; padding:1.2rem 1rem;
+      display:flex; flex-direction:column; gap:0.9rem;
+    }
+    .brand { font-size:1.8rem; font-weight:700; letter-spacing:.08em; margin-bottom:1rem; }
+    .filter { border:1px solid #4762be; padding:.55rem .65rem; border-radius:6px; color:#d8e2ff; }
+    .content { padding:1.2rem; display:grid; grid-template-rows:auto 1fr auto auto; gap:1rem; }
+    .topbar { display:flex; align-items:center; justify-content:space-between; }
+    .title { font-size:3rem; font-weight:900; color:var(--blue); letter-spacing:.02em; }
+    .title span { font-weight:400; }
+    .dash-grid { display:grid; grid-template-columns:2fr 1fr; gap:1rem; min-height:540px; }
+    .panel { background:var(--card); border:1px solid #d0d4e0; border-radius:8px; overflow:hidden; }
+    .panel-title { background:var(--blue); color:#fff; padding:.7rem .9rem; font-size:1.55rem; font-weight:700; }
+    .panel-body { padding:.9rem; }
+    .legend { display:flex; flex-wrap:wrap; gap:.8rem; margin-bottom:.6rem; font-size:.9rem; }
+    .legend span { display:flex; align-items:center; gap:.35rem; }
+    .legend i { width:.7rem; height:.7rem; border-radius:50%; display:inline-block; }
+    svg { width:100%; height:auto; background:#fbfbfb; border-radius:6px; }
+    table { width:100%; border-collapse:collapse; font-size:1.65rem; }
+    th { text-align:left; padding:.5rem .45rem; color:#4e4e4e; border-bottom:2px solid #c5c5c5; }
+    td { padding:.45rem; border-bottom:1px solid #ececec; }
+    td:not(:first-child), th:not(:first-child) { text-align:right; }
+    td.score { background:linear-gradient(90deg,#9f0000,#d32f2f); color:#fff; font-weight:700; }
+    td.delta { background:linear-gradient(90deg,#eaf8ea,#d7f0d7); }
+    .cards { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; }
+    .card { background:var(--card); border:1px solid #d4d9e5; border-radius:8px; text-align:center; padding:1.5rem .8rem; }
+    .card .v { font-size:3rem; font-weight:800; color:#1d2f80; }
+    .card .l { margin-top:.35rem; font-size:1.2rem; color:#555; }
+    .footer { text-align:right; font-size:.95rem; color:#333; }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">STELLANTIS</div>
+      <div class="filter">HOME</div>
+      <div class="filter">ANO: Todos</div>
+      <div class="filter">MÊS: Todos</div>
+      <div class="filter">SEMANA: Todos</div>
+      <div class="filter">ROBÔ: Todos</div>
+      <div class="filter">LINHA: Todos</div>
+      <div class="filter">STATUS: Todos</div>
+    </aside>
+    <main class="content">
+      <div class="topbar">
+        <div class="title">TRENDING <span>PHA2</span></div>
+        <div style="font-size:4.2rem; font-weight:800; color:#4d4d4d;">Jeep</div>
+      </div>
+      <div class="dash-grid">
+        <section class="panel">
+          <div class="panel-title">Média de pha2 por Ano, Mês e Dia</div>
+          <div class="panel-body"><div class="legend"><span><i style="background:#1f77b4"></i>robot-05</span><span><i style="background:#17becf"></i>robot-01</span><span><i style="background:#ff7f0e"></i>robot-06</span><span><i style="background:#9467bd"></i>robot-02</span><span><i style="background:#e377c2"></i>robot-04</span><span><i style="background:#2ca02c"></i>robot-03</span></div>
+<svg viewBox="0 0 860 300" role="img" aria-label="PHA2 trend chart">
+  <line x1="25" y1="15" x2="25" y2="285" stroke="#6d6d6d" stroke-width="1"/>
+  <line x1="25" y1="285" x2="845" y2="285" stroke="#6d6d6d" stroke-width="1"/>
+  <polyline points="25.00,52.55 140.71,84.50 256.43,88.81 372.14,67.45 487.86,70.90 603.57,79.32 719.29,71.12 835.00,90.32" fill="none" stroke="#1f77b4" stroke-width="2.2" opacity="0.95"/><polyline points="25.00,98.53 140.71,74.57 256.43,36.58 372.14,46.08 487.86,90.11 603.57,87.30 719.29,91.83 835.00,57.95" fill="none" stroke="#17becf" stroke-width="2.2" opacity="0.95"/><polyline points="25.00,55.14 140.71,91.19 256.43,52.55 372.14,86.22 487.86,39.82 603.57,112.99 719.29,91.40 835.00,81.26" fill="none" stroke="#ff7f0e" stroke-width="2.2" opacity="0.95"/><polyline points="25.00,75.22 140.71,101.98 256.43,78.02 372.14,97.45 487.86,131.33 603.57,127.66 719.29,117.30 835.00,103.92" fill="none" stroke="#9467bd" stroke-width="2.2" opacity="0.95"/><polyline points="25.00,148.81 140.71,191.76 256.43,139.96 372.14,183.35 487.86,135.22 603.57,123.13 719.29,129.60 835.00,151.83" fill="none" stroke="#e377c2" stroke-width="2.2" opacity="0.95"/><polyline points="25.00,224.78 140.71,236.65 256.43,263.42 372.14,193.06 487.86,218.31 603.57,252.19 719.29,207.09 835.00,190.04" fill="none" stroke="#2ca02c" stroke-width="2.2" opacity="0.95"/>
+</svg></div>
+        </section>
+        <section class="panel">
+          <div class="panel-title">MÉDIA PHA2 POR MÁQUINAS</div>
+          <div class="panel-body">
+            <table>
+              <thead>
+                <tr><th>ROBÔ</th><th>Score</th><th>β1_p</th><th>Δ 30D|1D</th><th>β1</th><th>Δ 2M|1M</th></tr>
+              </thead>
+              <tbody>
+<tr><td>ROBOT-05</td><td class='score'>86,08</td><td>66,72%</td><td class='delta'>-3,1%</td><td>-1,97</td><td class='delta'>8,5%</td></tr>
+<tr><td>ROBOT-01</td><td class='score'>82,80</td><td>45,67%</td><td class='delta'>8,9%</td><td>1,37</td><td class='delta'>-9,2%</td></tr>
+<tr><td>ROBOT-06</td><td class='score'>82,33</td><td>90,98%</td><td class='delta'>7,3%</td><td>-0,16</td><td class='delta'>-8,6%</td></tr>
+<tr><td>ROBOT-02</td><td class='score'>74,18</td><td>34,71%</td><td class='delta'>6,5%</td><td>-0,53</td><td class='delta'>-14,1%</td></tr>
+<tr><td>ROBOT-04</td><td class='score'>52,31</td><td>66,63%</td><td class='delta'>2,3%</td><td>-0,99</td><td class='delta'>-8,5%</td></tr>
+<tr><td>ROBOT-03</td><td class='score'>26,12</td><td>78,98%</td><td class='delta'>6,0%</td><td>-1,82</td><td class='delta'>-14,1%</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+      <div class="cards">
+        <div class="card"><div class="v">39,37</div><div class="l">Mediana de pha2</div></div>
+        <div class="card"><div class="v">2,71</div><div class="l">Desvio padrão de pha2</div></div>
+        <div class="card"><div class="v">42,06</div><div class="l">Máximo de pha2</div></div>
+        <div class="card"><div class="v">31,55</div><div class="l">Mínimo de pha2</div></div>
+      </div>
+      <div class="footer"><strong>ATUALIZAÇÃO:</strong> 28/05/2026 15:34:14</div>
+    </main>
+  </div>
+</body>
+</html>
