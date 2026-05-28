@@ -137,7 +137,7 @@ def render_html(rows: list[dict[str, float | str]]) -> str:
 <body>
   <div class="layout">
     <aside class="sidebar">
-      <div class="brand">STELLANTIS</div>
+      <div class="brand">ACME Company</div>
       <div class="filter">HOME</div>
       <div class="filter">ANO: Todos</div>
       <div class="filter">MÊS: Todos</div>
@@ -149,7 +149,7 @@ def render_html(rows: list[dict[str, float | str]]) -> str:
     <main class="content">
       <div class="topbar">
         <div class="title">TRENDING <span>PHA2</span></div>
-        <div style="font-size:4.2rem; font-weight:800; color:#4d4d4d;">Jeep</div>
+        <div style="font-size:4.2rem; font-weight:800; color:#4d4d4d;">ACME</div>
       </div>
       <div class="dash-grid">
         <section class="panel">
