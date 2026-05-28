@@ -56,7 +56,7 @@ def render_html(rows: list[dict[str, float | str]]) -> str:
 
 def main() -> None:
     rows = [random_row(robot) for robot in ROBOTS]
-    output_path = Path(__file__).resolve().parent / "pha2_scores.html"
+    output_path = Path(__file__).resolve().parent.parent / "index.html"
     output_path.write_text(render_html(rows), encoding="utf-8")
     print(f"Updated {output_path}")
 

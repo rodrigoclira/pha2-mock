@@ -8,4 +8,4 @@ python3 /tmp/workspace/rodrigoclira/pha2-mock/script/generate_pha2_table.py
 
 Output file:
 
-`/tmp/workspace/rodrigoclira/pha2-mock/script/pha2_scores.html`
+`/tmp/workspace/rodrigoclira/pha2-mock/index.html`
